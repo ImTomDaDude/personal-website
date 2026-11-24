@@ -1,4 +1,4 @@
-export const TASKBAR_HEIGHT = 40
+export const TASKBAR_HEIGHT = 56
 export const SIDEBAR_WIDTH = 168
 
 const MENUS_FULL = ['File', 'Edit', 'View', 'Tools', 'Help']

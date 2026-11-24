@@ -17,7 +17,7 @@ const { ui, taskbarWindows, toggleStartMenu, toggleTaskButton, openWindow } = us
       :class="{ 'is-open': ui.startMenuOpen }"
       @click.stop="toggleStartMenu()"
     >
-      <PixelIcon name="flower" :size="20" />
+      <PixelIcon name="flower" :size="28" />
       Start
     </button>
     <div class="quick-launch">
@@ -28,7 +28,7 @@ const { ui, taskbarWindows, toggleStartMenu, toggleTaskButton, openWindow } = us
         :title="item.label"
         @click="openWindow(item.windowId)"
       >
-        <PixelIcon :name="item.icon" :size="20" />
+        <PixelIcon :name="item.icon" :size="28" />
       </button>
     </div>
     <div class="task-buttons">
@@ -40,7 +40,7 @@ const { ui, taskbarWindows, toggleStartMenu, toggleTaskButton, openWindow } = us
         :class="{ 'is-active': win.focused && !win.minimized }"
         @click="toggleTaskButton(win.id)"
       >
-        <PixelIcon :name="win.icon" :size="18" />
+        <PixelIcon :name="win.icon" :size="24" />
         <span>{{ win.title }}</span>
       </button>
     </div>

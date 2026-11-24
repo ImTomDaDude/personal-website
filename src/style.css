@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Fusion Pixel 12px";
+  src: url("./assets/fonts/fusion-pixel-12px-proportional-latin.otf.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --wallpaper: #f3e4f4;
   --plus: #6ed4d0;
@@ -16,9 +24,9 @@
   --taskbar-2: #eaa0e8;
   --start: #ffd0f0;
   --select: #4d23cf;
-  --font-ui: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "PMingLiU", Tahoma, sans-serif;
-  --font-pixel: "Press Start 2P", "Noto Sans TC", monospace;
-  --taskbar-h: 40px;
+  --font-ui: "Fusion Pixel 12px", "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", Tahoma, sans-serif;
+  --font-pixel: "Fusion Pixel 12px", "Noto Sans TC", monospace;
+  --taskbar-h: 56px;
   --sidebar-w: 168px;
 }
 
@@ -42,7 +50,13 @@ body {
   font-family: var(--font-ui);
   color: var(--ink);
   background: var(--wallpaper);
-  -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
+  font-synthesis: none;
 }
 
 button,
@@ -50,6 +64,21 @@ input,
 select,
 textarea {
   font-family: inherit;
+}
+
+button,
+input,
+select,
+textarea,
+.nso-window,
+.taskbar,
+.start-menu,
+.desktop-icon,
+.mobile-shell {
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
 }
 
 a {
@@ -132,7 +161,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 8px;
-  height: 28px;
+  height: 32px;
   padding: 0 6px 0 8px;
   background: var(--title-bar);
   border-bottom: 3px solid var(--stroke);
@@ -171,9 +200,9 @@ a:hover {
 .nso-titlebar .title-bar-text {
   flex: 1;
   color: var(--ink);
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -219,7 +248,9 @@ a:hover {
   padding: 0 4px;
   flex-shrink: 0;
   position: relative;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
 }
 
 .nso-menubar .menu-item {
@@ -261,7 +292,9 @@ a:hover {
   background: transparent;
   padding: 4px 12px;
   color: var(--ink);
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
 }
 
 .nso-menubar .menu-drop button:hover {
@@ -277,8 +310,9 @@ a:hover {
   padding: 10px 12px;
   background: var(--fg);
   color: var(--ink);
-  font-size: 15px;
-  line-height: 1.65;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 .nso-statusbar {
@@ -326,11 +360,11 @@ a:hover {
 
 .icon-column {
   position: absolute;
-  top: 14px;
+  top: 10px;
   left: 12px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   z-index: 1;
   width: 128px;
 }
@@ -369,10 +403,10 @@ a:hover {
 }
 
 .desktop-icon .icon-label {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 400;
   text-align: center;
-  line-height: 1.2;
+  line-height: 12px;
   text-shadow: 1px 1px 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
   max-width: 124px;
   white-space: nowrap;
@@ -396,8 +430,8 @@ a:hover {
   height: var(--taskbar-h);
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 3px 6px;
+  gap: 8px;
+  padding: 5px 8px;
   background: linear-gradient(180deg, #ffd4f2 0%, var(--taskbar) 40%, var(--taskbar-2) 100%);
   border-top: 3px solid var(--stroke);
   z-index: 8000;
@@ -406,14 +440,15 @@ a:hover {
 .start-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  height: 30px;
-  padding: 0 12px 0 6px;
+  gap: 8px;
+  height: 44px;
+  padding: 0 16px 0 8px;
   background: var(--start) !important;
   border: 2px solid var(--stroke) !important;
   color: var(--ink);
-  font-weight: 700;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
   cursor: pointer;
   flex-shrink: 0;
 }
@@ -427,15 +462,15 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 2px;
-  padding: 0 6px;
+  padding: 0 8px;
   border-left: 2px solid var(--stroke);
   border-right: 2px solid var(--stroke);
-  height: 24px;
+  height: 40px;
 }
 
 .quick-launch button {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   padding: 0;
   display: grid;
   place-items: center;
@@ -460,15 +495,16 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  min-width: 130px;
-  max-width: 200px;
-  height: 28px;
-  padding: 0 8px;
+  min-width: 160px;
+  max-width: 240px;
+  height: 40px;
+  padding: 0 10px;
   background: #ffe8f8 !important;
   border: 2px solid var(--stroke) !important;
   color: var(--ink);
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
   cursor: pointer;
   overflow: hidden;
 }
@@ -487,20 +523,22 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 8px;
-  height: 28px;
-  padding: 0 8px;
+  height: 40px;
+  padding: 0 12px;
   background: #ffe8f8;
   border: 2px solid var(--stroke);
   flex-shrink: 0;
   color: var(--ink);
-  font-weight: 700;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
   cursor: pointer;
 }
 
 .tray .clock {
   font-family: var(--font-pixel);
-  font-size: 8px;
+  font-size: 24px;
+  line-height: 24px;
   letter-spacing: 0;
   white-space: nowrap;
 }
@@ -529,9 +567,10 @@ a:hover {
   padding: 10px 0;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-weight: 700;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 12px;
   letter-spacing: 0.12em;
+  line-height: 12px;
 }
 
 .start-items {
@@ -577,7 +616,8 @@ a:hover {
 .page-heading {
   margin: 0 0 8px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
+  line-height: 24px;
   color: var(--ink);
 }
 
@@ -586,8 +626,10 @@ a:hover {
   background: var(--mint);
   border: 2px solid var(--stroke);
   padding: 2px 8px;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .lede {
@@ -748,8 +790,8 @@ a:hover {
   border: 2px solid var(--stroke);
   padding: 8px 10px;
   color: var(--ink);
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 24px;
+  line-height: 36px;
   align-self: flex-start;
 }
 
@@ -813,20 +855,21 @@ a:hover {
 }
 
 .calendar-body .date-lg {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 24px;
 }
 
 .calendar-body .time-lg {
   font-family: var(--font-pixel);
-  font-size: 12px;
-  line-height: 1.4;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 /* notes */
 .notes-body {
-  font-size: 15px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .notes-body p {

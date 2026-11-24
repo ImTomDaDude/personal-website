@@ -46,6 +46,11 @@ On the owner's Windows PC, the project path is:
 - Mobile: a simpler vertical layout, without dragging overlapping windows.
 - Content comes from a public resume and LinkedIn. The site only shows a name, an email address, and a LinkedIn profile — no phone number or home address.
 
+
+## Fonts
+
+The site uses **[Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font)** 12px proportional Latin (version 2026.11.10) by TakWolf, licensed under the [SIL Open Font License 1.1](https://openfontlicense.org). The font files and license are self-hosted in `src/assets/fonts/`. Noto Sans TC remains a fallback if any non-Latin text appears. This is an original open-source pixel font, not a game or Windows system font.
+
 ## License and disclaimer
 
 The visual style is a nostalgic homage and has no official relationship with Microsoft or Windows.
