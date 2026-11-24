@@ -8,6 +8,7 @@ import LinkedInContent from './windows/LinkedInContent.vue'
 import NotesContent from './windows/NotesContent.vue'
 import CalendarContent from './windows/CalendarContent.vue'
 import RemindContent from './windows/RemindContent.vue'
+import TerminalContent from './windows/TerminalContent.vue'
 import { profile } from '../data/content.js'
 
 const sections = [
@@ -16,6 +17,7 @@ const sections = [
   { id: 'skills', title: 'Skills', icon: 'skills' },
   { id: 'projects', title: 'Projects', icon: 'projects' },
   { id: 'notes', title: 'Notes', icon: 'notes' },
+  { id: 'terminal', title: 'Terminal', icon: 'terminal' },
   { id: 'remind', title: 'Remind', icon: 'remind' },
   { id: 'linkedin', title: 'Message', icon: 'linkedin' },
 ]
@@ -71,6 +73,7 @@ const sections = [
         <SkillsContent v-else-if="sec.id === 'skills'" />
         <ProjectsContent v-else-if="sec.id === 'projects'" />
         <NotesContent v-else-if="sec.id === 'notes'" />
+        <TerminalContent v-else-if="sec.id === 'terminal'" />
         <RemindContent v-else-if="sec.id === 'remind'" />
         <LinkedInContent v-else-if="sec.id === 'linkedin'" />
       </div>

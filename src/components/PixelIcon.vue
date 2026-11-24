@@ -29,6 +29,7 @@ const aliases = {
   folder: 'folder_open',
   recycle: 'trash',
   notes: 'text',
+  terminal: 'task',
   help: 'search',
   remind: 'medications',
   sun: 'time_noon',

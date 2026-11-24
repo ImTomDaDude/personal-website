@@ -17,6 +17,7 @@ import NotesContent from './windows/NotesContent.vue'
 import CalendarContent from './windows/CalendarContent.vue'
 import HelpContent from './windows/HelpContent.vue'
 import RemindContent from './windows/RemindContent.vue'
+import TerminalContent from './windows/TerminalContent.vue'
 import { useWindowManager } from '../composables/useWindowManager.js'
 import { DESKTOP_ICONS } from '../data/windows.js'
 
@@ -84,6 +85,7 @@ function openIcon(id) {
       <Win98Window id="recycle"><RecycleBinContent /></Win98Window>
       <Win98Window id="help"><HelpContent /></Win98Window>
       <Win98Window id="remind"><RemindContent /></Win98Window>
+      <Win98Window id="terminal"><TerminalContent /></Win98Window>
 
       <MascotBuddy />
     </div>

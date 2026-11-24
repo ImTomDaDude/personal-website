@@ -12,6 +12,7 @@ const items = [
   { id: 'projects', label: 'Projects', icon: 'projects' },
   { id: 'linkedin', label: 'Message', icon: 'linkedin' },
   { id: 'notes', label: 'Notes', icon: 'notes' },
+  { id: 'terminal', label: 'Terminal', icon: 'terminal' },
   { id: 'remind', label: 'Remind', icon: 'remind' },
 ]
 </script>

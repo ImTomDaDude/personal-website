@@ -324,6 +324,83 @@ a:hover {
   line-height: 36px;
 }
 
+.nso-body:has(.term) {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.term {
+  flex: 1;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.term-screen {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 10px 12px 6px;
+}
+
+.term-block p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.term-cmd {
+  margin-top: 8px;
+}
+
+.term-prompt {
+  color: var(--accent-hot);
+}
+
+.term-block.err {
+  color: #b42386;
+}
+
+.term-block.dim {
+  color: var(--ink-soft);
+}
+
+.term-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.term a {
+  color: var(--ink);
+}
+
+.term-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-top: 2px solid var(--stroke);
+  background: #fff;
+}
+
+.term-input input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  line-height: 24px;
+  padding: 0;
+  outline: none;
+}
+
 .nso-statusbar {
   display: flex;
   align-items: center;

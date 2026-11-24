@@ -100,6 +100,14 @@ export const WINDOW_CATALOG = {
     status: 'Please read this first',
     default: { x: 240, y: 96, w: 680, h: 420 },
   },
+  terminal: {
+    id: 'terminal',
+    title: 'Terminal',
+    icon: 'terminal',
+    menus: [],
+    status: 'Type help',
+    default: { x: 220, y: 48, w: 680, h: 460 },
+  },
 }
 
 export const DESKTOP_ICONS = [
@@ -111,6 +119,7 @@ export const DESKTOP_ICONS = [
   { id: 'skills', label: 'Skills', icon: 'skills', windowId: 'skills' },
   { id: 'projects', label: 'Projects', icon: 'projects', windowId: 'projects' },
   { id: 'notes', label: 'Notes', icon: 'notes', windowId: 'notes' },
+  { id: 'terminal', label: 'Terminal', icon: 'terminal', windowId: 'terminal' },
   { id: 'remind', label: 'Remind', icon: 'remind', windowId: 'remind' },
 ]
 
@@ -121,6 +130,7 @@ export const START_MENU_ITEMS = [
   { id: 'skills', label: 'Skills', icon: 'skills', windowId: 'skills' },
   { id: 'projects', label: 'Projects', icon: 'projects', windowId: 'projects' },
   { id: 'notes', label: 'Notes', icon: 'notes', windowId: 'notes' },
+  { id: 'terminal', label: 'Terminal', icon: 'terminal', windowId: 'terminal' },
   { id: 'calendar', label: 'Calendar', icon: 'calendar', windowId: 'calendar' },
   { id: 'computer', label: 'My Computer', icon: 'computer', windowId: 'computer' },
   { id: 'documents', label: 'My Documents', icon: 'folder', windowId: 'documents' },
