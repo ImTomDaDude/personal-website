@@ -2,7 +2,7 @@
 
 A cute, pink, classic Windows 98/2000-style personal website with a little pink-purple-mint pixel game-OS flavor, built with **Vue 3** and **Vite**.
 
-This is a nostalgic homage to classic desktop interfaces. It is **not an official Microsoft product**, and it is not affiliated with any game studio. All window chrome, plus-hatch wallpaper, pixel icons, the PlusKit mascot, stickers, and the sunset sidebar are original. The site does not use copyrighted system icons, official logos, system sounds, or official game character art.
+This is a nostalgic homage to classic desktop interfaces. It is **not an official Microsoft product**, and it is not affiliated with any game studio. All window chrome, plus-hatch wallpaper, pixel icons, the Ame-chan mascot, and stickers are original. The site does not use copyrighted system icons, official logos, system sounds, or official game sprites. Ame-chan on this desktop is an original pixel drawing.
 
 The look is inspired by classic pink Windows desktops and by the window colors and layout mood of [lezzthanthree/Needy-Streamer-Overload](https://github.com/lezzthanthree/Needy-Streamer-Overload) (MIT, Copyright © 2024 Smilie Pop). That repository's MIT license covers the skin code, **not game characters or official artwork**, so this site only borrows the color rhythm (lavender title bars, purple outlines, mint panels) and redraws everything with original pixel art.
 
@@ -42,7 +42,7 @@ On the owner's Windows PC, the project path is:
 ## What's included
 
 - Desktop: draggable windows (minimize, maximize, close), a Start menu, a pink taskbar, and a live clock.
-- Extra windows: Calendar, Notes, a contact chat (email and LinkedIn), an original mascot, and a sunset sidebar.
+- Extra windows: Calendar, Notes, a contact chat (email and LinkedIn), and an original mascot.
 - Mobile: a simpler vertical layout, without dragging overlapping windows.
 - Content comes from a public resume and LinkedIn. The site only shows a name, an email address, and a LinkedIn profile — no phone number or home address.
 

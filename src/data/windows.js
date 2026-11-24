@@ -1,5 +1,4 @@
 export const TASKBAR_HEIGHT = 56
-export const SIDEBAR_WIDTH = 168
 
 const MENUS_FULL = ['File', 'Edit', 'View', 'Tools', 'Help']
 const MENUS_BASIC = ['File', 'View', 'Help']
@@ -23,10 +22,10 @@ export const WINDOW_CATALOG = {
   },
   linkedin: {
     id: 'linkedin',
-    title: 'Contact',
+    title: 'Message',
     icon: 'linkedin',
     menus: [],
-    status: 'Email and LinkedIn',
+    status: 'Email, LinkedIn, and Instagram',
     default: { x: 200, y: 70, w: 540, h: 600 },
   },
   skills: {
@@ -93,6 +92,14 @@ export const WINDOW_CATALOG = {
     status: 'A nostalgic homage',
     default: { x: 200, y: 70, w: 640, h: 420 },
   },
+  remind: {
+    id: 'remind',
+    title: 'Remind',
+    icon: 'remind',
+    menus: [],
+    status: 'Please read this first',
+    default: { x: 240, y: 96, w: 680, h: 420 },
+  },
 }
 
 export const DESKTOP_ICONS = [
@@ -100,16 +107,17 @@ export const DESKTOP_ICONS = [
   { id: 'documents', label: 'My Documents', icon: 'folder', windowId: 'documents' },
   { id: 'about', label: 'About Me', icon: 'about', windowId: 'about' },
   { id: 'resume', label: 'Experience', icon: 'resume', windowId: 'resume' },
-  { id: 'linkedin', label: 'LinkedIn', icon: 'linkedin', windowId: 'linkedin' },
+  { id: 'linkedin', label: 'Message', icon: 'linkedin', windowId: 'linkedin' },
   { id: 'skills', label: 'Skills', icon: 'skills', windowId: 'skills' },
   { id: 'projects', label: 'Projects', icon: 'projects', windowId: 'projects' },
   { id: 'notes', label: 'Notes', icon: 'notes', windowId: 'notes' },
+  { id: 'remind', label: 'Remind', icon: 'remind', windowId: 'remind' },
 ]
 
 export const START_MENU_ITEMS = [
   { id: 'about', label: 'About Me', icon: 'about', windowId: 'about' },
   { id: 'resume', label: 'Experience', icon: 'resume', windowId: 'resume' },
-  { id: 'linkedin', label: 'Contact / LinkedIn', icon: 'linkedin', windowId: 'linkedin' },
+  { id: 'linkedin', label: 'Message', icon: 'linkedin', windowId: 'linkedin' },
   { id: 'skills', label: 'Skills', icon: 'skills', windowId: 'skills' },
   { id: 'projects', label: 'Projects', icon: 'projects', windowId: 'projects' },
   { id: 'notes', label: 'Notes', icon: 'notes', windowId: 'notes' },
@@ -117,11 +125,13 @@ export const START_MENU_ITEMS = [
   { id: 'computer', label: 'My Computer', icon: 'computer', windowId: 'computer' },
   { id: 'documents', label: 'My Documents', icon: 'folder', windowId: 'documents' },
   { id: 'help', label: 'About This Website', icon: 'help', windowId: 'help' },
+  { id: 'remind', label: 'Remind', icon: 'remind', windowId: 'remind' },
 ]
 
 export const QUICK_LAUNCH = [
+  { id: 'ame', label: 'Ame-chan', icon: 'ame', windowId: 'linkedin' },
   { id: 'about', label: 'About Me', icon: 'about', windowId: 'about' },
   { id: 'resume', label: 'Experience', icon: 'resume', windowId: 'resume' },
-  { id: 'linkedin', label: 'Contact', icon: 'linkedin', windowId: 'linkedin' },
+  { id: 'linkedin', label: 'Message', icon: 'linkedin', windowId: 'linkedin' },
   { id: 'notes', label: 'Notes', icon: 'notes', windowId: 'notes' },
 ]

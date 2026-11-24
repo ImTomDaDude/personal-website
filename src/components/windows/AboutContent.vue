@@ -13,6 +13,6 @@ const { openWindow } = useWindowManager()
     <button class="action-btn" type="button" @click="openWindow('resume')">Open Experience</button>
     <button class="action-btn" type="button" @click="openWindow('skills')">Skills</button>
     <a class="action-btn pink" :href="`mailto:${profile.email}`">{{ profile.email }}</a>
-    <button class="action-btn" type="button" @click="openWindow('linkedin')">Contact / LinkedIn</button>
+    <button class="action-btn" type="button" @click="openWindow('linkedin')">Message</button>
   </div>
 </template>

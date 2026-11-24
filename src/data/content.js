@@ -3,6 +3,8 @@ export const profile = {
   email: 'hoion01@outlook.com',
   linkedin: 'https://www.linkedin.com/in/hoion-chan-283552325/',
   linkedinLabel: 'linkedin.com/in/hoion-chan-283552325',
+  instagram: 'https://www.instagram.com/chan.hoi.on9/',
+  instagramLabel: 'instagram.com/chan.hoi.on9',
   tagline: 'Fresh graduate, passionate about AI engineering.',
 }
 
@@ -79,11 +81,11 @@ export const notesText = [
 
 export const contactMessages = [
   {
-    from: 'pluskit',
-    text: "Hi! Welcome to Chan Hoi On's desktop. I'm PlusKit, the little helper here.",
+    from: 'ame',
+    text: "Hi! Welcome to Chan Hoi On's desktop. I'm Ame-chan.",
   },
   {
-    from: 'pluskit',
+    from: 'ame',
     text: "The owner is a fresh graduate, passionate about AI engineering. To get in touch, use the email or LinkedIn buttons below.",
   },
 ]

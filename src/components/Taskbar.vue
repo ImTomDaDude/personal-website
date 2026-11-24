@@ -17,7 +17,7 @@ const { ui, taskbarWindows, toggleStartMenu, toggleTaskButton, openWindow } = us
       :class="{ 'is-open': ui.startMenuOpen }"
       @click.stop="toggleStartMenu()"
     >
-      <PixelIcon name="flower" :size="28" />
+      <PixelIcon name="ame-happy" :size="32" />
       Start
     </button>
     <div class="quick-launch">

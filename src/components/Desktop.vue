@@ -1,10 +1,8 @@
 <script setup>
 import { onMounted, onUnmounted } from 'vue'
-import { useMediaQuery } from '@vueuse/core'
 import DesktopIcon from './DesktopIcon.vue'
 import Win98Window from './Win98Window.vue'
 import Taskbar from './Taskbar.vue'
-import VaporwaveSidebar from './VaporwaveSidebar.vue'
 import MascotBuddy from './MascotBuddy.vue'
 import ShutdownDialog from './ShutdownDialog.vue'
 import AboutContent from './windows/AboutContent.vue'
@@ -18,12 +16,11 @@ import RecycleBinContent from './windows/RecycleBinContent.vue'
 import NotesContent from './windows/NotesContent.vue'
 import CalendarContent from './windows/CalendarContent.vue'
 import HelpContent from './windows/HelpContent.vue'
+import RemindContent from './windows/RemindContent.vue'
 import { useWindowManager } from '../composables/useWindowManager.js'
 import { DESKTOP_ICONS } from '../data/windows.js'
 
 const { ui, openWindow, selectIcon, clearDesktopSelection, closeStartMenu } = useWindowManager()
-
-const isWide = useMediaQuery('(min-width: 1101px)')
 
 function onDesktopClick(event) {
   if (event.target === event.currentTarget) {
@@ -52,13 +49,8 @@ function openIcon(id) {
 </script>
 
 <template>
-  <div class="desktop-shell" :class="{ wide: isWide }">
-    <VaporwaveSidebar v-if="isWide" />
-    <div
-      class="desktop-area"
-      :class="{ 'has-sidebar': isWide }"
-      @mousedown.self="onDesktopClick"
-    >
+  <div class="desktop-shell">
+    <div class="desktop-area" @mousedown.self="onDesktopClick">
       <div class="icon-column">
         <DesktopIcon
           v-for="item in DESKTOP_ICONS"
@@ -91,6 +83,7 @@ function openIcon(id) {
       <Win98Window id="documents"><DocumentsContent /></Win98Window>
       <Win98Window id="recycle"><RecycleBinContent /></Win98Window>
       <Win98Window id="help"><HelpContent /></Win98Window>
+      <Win98Window id="remind"><RemindContent /></Win98Window>
 
       <MascotBuddy />
     </div>

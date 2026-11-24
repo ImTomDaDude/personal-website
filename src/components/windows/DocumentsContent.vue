@@ -10,6 +10,7 @@ const files = [
   { id: 'skills', label: 'Skills.txt', icon: 'skills' },
   { id: 'projects', label: 'Projects.txt', icon: 'projects' },
   { id: 'notes', label: 'Notes.txt', icon: 'notes' },
+  { id: 'remind', label: 'Remind.txt', icon: 'remind' },
 ]
 </script>
 

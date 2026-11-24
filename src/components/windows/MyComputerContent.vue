@@ -10,8 +10,9 @@ const items = [
   { id: 'documents', label: 'My Documents', icon: 'folder' },
   { id: 'skills', label: 'Skills', icon: 'skills' },
   { id: 'projects', label: 'Projects', icon: 'projects' },
-  { id: 'linkedin', label: 'Contact', icon: 'linkedin' },
+  { id: 'linkedin', label: 'Message', icon: 'linkedin' },
   { id: 'notes', label: 'Notes', icon: 'notes' },
+  { id: 'remind', label: 'Remind', icon: 'remind' },
 ]
 </script>
 

@@ -27,7 +27,7 @@ function openItem(id) {
       </button>
       <div class="sep" />
       <button type="button" class="shutdown" @click="toggleShutdown(true)">
-        <PixelIcon name="flower" :size="32" />
+        <PixelIcon name="ame-sleepy" :size="32" />
         <span>Shut Down…</span>
       </button>
     </div>

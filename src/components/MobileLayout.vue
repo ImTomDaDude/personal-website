@@ -7,6 +7,7 @@ import ProjectsContent from './windows/ProjectsContent.vue'
 import LinkedInContent from './windows/LinkedInContent.vue'
 import NotesContent from './windows/NotesContent.vue'
 import CalendarContent from './windows/CalendarContent.vue'
+import RemindContent from './windows/RemindContent.vue'
 import { profile } from '../data/content.js'
 
 const sections = [
@@ -15,19 +16,28 @@ const sections = [
   { id: 'skills', title: 'Skills', icon: 'skills' },
   { id: 'projects', title: 'Projects', icon: 'projects' },
   { id: 'notes', title: 'Notes', icon: 'notes' },
-  { id: 'linkedin', title: 'Contact', icon: 'linkedin' },
+  { id: 'remind', title: 'Remind', icon: 'remind' },
+  { id: 'linkedin', title: 'Message', icon: 'linkedin' },
 ]
 </script>
 
 <template>
   <div class="mobile-shell">
     <header class="mobile-top">
-      <PixelIcon name="pluskit" :size="40" />
+      <PixelIcon name="ame" :size="48" />
       <div>
         <h1>{{ profile.name }}</h1>
         <p>{{ profile.tagline }}</p>
       </div>
     </header>
+
+    <div class="mobile-ames" aria-hidden="true">
+      <PixelIcon name="kangel" :size="36" />
+      <PixelIcon name="icon_status_follower" :size="36" />
+      <PixelIcon name="icon_status_love" :size="36" />
+      <PixelIcon name="icon_status_stress" :size="36" />
+      <PixelIcon name="ame_black" :size="36" />
+    </div>
 
     <nav class="mobile-nav">
       <a v-for="sec in sections" :key="sec.id" :href="'#' + sec.id">{{ sec.title }}</a>
@@ -61,6 +71,7 @@ const sections = [
         <SkillsContent v-else-if="sec.id === 'skills'" />
         <ProjectsContent v-else-if="sec.id === 'projects'" />
         <NotesContent v-else-if="sec.id === 'notes'" />
+        <RemindContent v-else-if="sec.id === 'remind'" />
         <LinkedInContent v-else-if="sec.id === 'linkedin'" />
       </div>
       <div class="nso-statusbar">
