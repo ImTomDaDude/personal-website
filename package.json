@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Chan Hoi On 的粉紅色 Windows 98 風格個人網站",
+  "description": "Chan Hoi On personal website in a cute pink Windows 98 style",
   "engines": {
     "node": ">=20"
   },

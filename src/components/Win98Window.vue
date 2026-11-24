@@ -119,13 +119,13 @@ onBeforeUnmount(() => {
       <PixelIcon :name="win.icon" :size="16" class="title-icon" />
       <div class="title-bar-text">{{ win.title }}</div>
       <div class="nso-controls">
-        <button class="ctrl" aria-label="Minimize" title="最小化" @click.stop="minimizeWindow(id)" @pointerdown.stop>
+        <button class="ctrl" aria-label="Minimize" title="Minimize" @click.stop="minimizeWindow(id)" @pointerdown.stop>
           <svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="7" width="8" height="2" fill="#4d23cf" /></svg>
         </button>
         <button
           class="ctrl"
           :aria-label="win.maximized ? 'Restore' : 'Maximize'"
-          :title="win.maximized ? '還原' : '最大化'"
+          :title="win.maximized ? 'Restore' : 'Maximize'"
           @click.stop="toggleMaximize(id)"
           @pointerdown.stop
         >
@@ -137,7 +137,7 @@ onBeforeUnmount(() => {
             <rect x="1" y="3" width="6" height="6" fill="#fff" stroke="#4d23cf" stroke-width="1.6" />
           </svg>
         </button>
-        <button class="ctrl" aria-label="Close" title="關閉" @click.stop="closeWindow(id)" @pointerdown.stop>
+        <button class="ctrl" aria-label="Close" title="Close" @click.stop="closeWindow(id)" @pointerdown.stop>
           <svg viewBox="0 0 10 10" aria-hidden="true">
             <path d="M2 2 L8 8 M8 2 L2 8" stroke="#4d23cf" stroke-width="2" />
           </svg>
@@ -155,9 +155,9 @@ onBeforeUnmount(() => {
           {{ menu }}
         </button>
         <div v-if="openMenu === menu" class="menu-drop">
-          <button v-if="menu === '檔案'" type="button" @click="onFileClose">關閉視窗</button>
-          <button v-else-if="menu === '說明'" type="button" @click="onHelp">關於本網站</button>
-          <button v-else type="button" disabled>尚未提供</button>
+          <button v-if="menu === 'File'" type="button" @click="onFileClose">Close window</button>
+          <button v-else-if="menu === 'Help'" type="button" @click="onHelp">About this website</button>
+          <button v-else type="button" disabled>Not available yet</button>
         </div>
       </div>
     </div>

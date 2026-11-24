@@ -18,7 +18,7 @@ const emit = defineEmits(['open', 'select'])
     @click="emit('select')"
     @dblclick.prevent="emit('open')"
   >
-    <PixelIcon :name="icon" :size="32" class="icon-art" />
+    <PixelIcon :name="icon" :size="48" class="icon-art" />
     <span class="icon-label">{{ label }}</span>
   </button>
 </template>

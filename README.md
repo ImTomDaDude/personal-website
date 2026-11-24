@@ -1,51 +1,51 @@
-# Chan Hoi On 個人網站
+# Chan Hoi On Personal Website
 
-粉紅、超可愛的經典 Windows 98／2000 桌面風格個人網站，再帶一點粉紫薄荷的像素遊戲作業系統氣息，以 **Vue 3** 與 **Vite** 製作。
+A cute, pink, classic Windows 98/2000-style personal website with a little pink-purple-mint pixel game-OS flavor, built with **Vue 3** and **Vite**.
 
-這是向經典桌面介面致敬的懷舊重製，**並非微軟官方產品**，也與任何遊戲官方沒有從屬關係。所有視窗框線、棉紙加號桌布、像素圖示、吉祥物 PlusKit、貼圖與日落側欄皆為原創，沒有使用受著作權保護的系統圖示、官方標誌或系統音效，也沒有使用遊戲角色立繪。
+This is a nostalgic homage to classic desktop interfaces. It is **not an official Microsoft product**, and it is not affiliated with any game studio. All window chrome, plus-hatch wallpaper, pixel icons, the PlusKit mascot, stickers, and the sunset sidebar are original. The site does not use copyrighted system icons, official logos, system sounds, or official game character art.
 
-視覺靈感來自經典粉紅 Windows 桌面，以及 [lezzthanthree/Needy-Streamer-Overload](https://github.com/lezzthanthree/Needy-Streamer-Overload)（MIT，Copyright © 2024 Smilie Pop）這套 Rainmeter 皮膚的視窗色調與排版氣氛。該 repo 的 MIT 授權涵蓋皮膚程式碼，**並不涵蓋遊戲角色與官方美術**，因此本站只吸收色彩與介面節奏（淡紫標題列、紫色描邊、薄荷內容區），並以原創像素畫重繪。
+The look is inspired by classic pink Windows desktops and by the window colors and layout mood of [lezzthanthree/Needy-Streamer-Overload](https://github.com/lezzthanthree/Needy-Streamer-Overload) (MIT, Copyright © 2024 Smilie Pop). That repository's MIT license covers the skin code, **not game characters or official artwork**, so this site only borrows the color rhythm (lavender title bars, purple outlines, mint panels) and redraws everything with original pixel art.
 
-## 需求
+## Requirements
 
-- [Node.js](https://nodejs.org/) **20** 或以上
-- npm（隨 Node.js 安裝）
+- [Node.js](https://nodejs.org/) **20** or later
+- npm (installed with Node.js)
 
-## 安裝與本機預覽
+## Install and preview locally
 
-在終端機進入本專案資料夾後執行：
+In a terminal, go to this project folder and run:
 
 ```bash
 npm install
 npm run dev
 ```
 
-然後在瀏覽器打開終端機顯示的本機網址（通常是 http://localhost:5173/）。
+Then open the local URL shown in the terminal (usually http://localhost:5173/).
 
-正式建置與預覽：
+Production build and preview:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## 用 Cursor 打開
+## Open in Cursor
 
-1. 啟動 Cursor。
-2. 選擇 **File > Open Folder…**（檔案 > 開啟資料夾）。
-3. 選取本專案資料夾後即可繼續本機開發。
+1. Start Cursor.
+2. Choose **File > Open Folder…**
+3. Select this project folder to continue local development.
 
-這個專案目前在你的 Windows 電腦上的路徑是：
+On the owner's Windows PC, the project path is:
 
 `C:\Users\ie-admin\Desktop\personal-website`
 
-## 專案簡述
+## What's included
 
-- 桌面版：可拖曳的視窗（最小化、最大化、關閉）、開始功能表、粉紅工作列與即時時鐘。
-- 另有日曆、小筆記、聯絡聊天室（電郵與 LinkedIn）、原創吉祥物與日落側欄。
-- 手機版：另做較簡單的直式排版，不必拖曳重疊視窗。
-- 內容來自公開履歷與 LinkedIn；網站只顯示姓名、電郵與 LinkedIn，不含電話或住址。
+- Desktop: draggable windows (minimize, maximize, close), a Start menu, a pink taskbar, and a live clock.
+- Extra windows: Calendar, Notes, a contact chat (email and LinkedIn), an original mascot, and a sunset sidebar.
+- Mobile: a simpler vertical layout, without dragging overlapping windows.
+- Content comes from a public resume and LinkedIn. The site only shows a name, an email address, and a LinkedIn profile — no phone number or home address.
 
-## 授權與聲明
+## License and disclaimer
 
-本站外觀是懷舊風格致敬，與 Microsoft、Windows 沒有任何官方關係。
+The visual style is a nostalgic homage and has no official relationship with Microsoft or Windows.

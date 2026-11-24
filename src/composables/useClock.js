@@ -8,7 +8,7 @@ export function useClock() {
   }, 1000)
 
   const timeLabel = computed(() =>
-    new Intl.DateTimeFormat('zh-HK', {
+    new Intl.DateTimeFormat('en-HK', {
       hour: 'numeric',
       minute: '2-digit',
       hour12: true,
@@ -16,7 +16,7 @@ export function useClock() {
   )
 
   const dateLabel = computed(() =>
-    new Intl.DateTimeFormat('zh-HK', {
+    new Intl.DateTimeFormat('en-HK', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',

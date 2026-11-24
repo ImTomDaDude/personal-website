@@ -3,57 +3,59 @@ export const profile = {
   email: 'hoion01@outlook.com',
   linkedin: 'https://www.linkedin.com/in/hoion-chan-283552325/',
   linkedinLabel: 'linkedin.com/in/hoion-chan-283552325',
-  tagline: '新畢業生，熱衷人工智能工程。',
+  tagline: 'Fresh graduate, passionate about AI engineering.',
 }
 
 export const skills = {
-  程式與資料: ['Python', 'Java', 'SQL', 'MongoDB', 'HTML', 'CSS', 'Vue.js'],
-  作業系統: ['Windows', 'macOS', 'Linux'],
-  人工智能: ['YOLO', 'PyTorch', 'Flux', 'ComfyUI', 'Stable Diffusion'],
+  'Programming & Data': ['Python', 'Java', 'SQL', 'MongoDB', 'HTML', 'CSS', 'Vue.js'],
+  'Operating Systems': ['Windows', 'macOS', 'Linux'],
+  'Artificial Intelligence': ['YOLO', 'PyTorch', 'Flux', 'ComfyUI', 'Stable Diffusion'],
 }
 
 export const experience = [
   {
-    period: '2025年 9 月起',
+    period: 'Since September 2025',
     org: 'Huawei Hong Kong Research Center',
     title: 'IT Engineer',
-    description: '管理 GPU 節點與計算資源，使用 Slurm 工作排程，協作 AI 應用的基礎設施。',
+    description:
+      'Managing GPU nodes and compute resources, using Slurm job scheduling, and supporting infrastructure for AI applications.',
   },
   {
-    period: '2023年 7–8 月',
+    period: 'July–August 2023',
     org: 'HKSTP',
-    title: 'Data Engineer 暑期實習',
-    description: '使用 CRM Dynamics 365 數據，協助營運與決策。',
+    title: 'Data Engineer intern',
+    description: 'Used CRM Dynamics 365 data to support operations and decision-making.',
   },
   {
-    period: '2022年 6–9 月',
+    period: 'June–September 2022',
     org: 'JohnsonElectric',
-    title: 'Data Engineer 暑期實習',
-    description: 'Excel 與 Python 分析，維護財務部門儀表板。',
+    title: 'Data Engineer intern',
+    description: 'Excel and Python analysis, maintaining finance department dashboards.',
   },
 ]
 
 export const projects = [
   {
     title: 'Robocon 2025',
-    description: '魚籤辨識與電腦視覺模型、參與 AI 開發流程。',
+    description:
+      'Fish-tag recognition and computer vision models, contributing to the AI development process.',
   },
   {
-    title: '畢業專題',
+    title: 'Graduation project',
     description:
-      '合成影像生成以平衡資料集、feature fusion YOLO 姿態偵測、微調 LLM 以產出健康報告。',
+      'Synthetic image generation to balance datasets, feature fusion YOLO pose detection, and fine-tuning an LLM to produce health reports.',
   },
 ]
 
 export const education = [
   {
     period: '2021–2025',
-    school: '香港浸會大學',
-    detail: 'BSc (Hons) Computer Science（AI）',
+    school: 'Hong Kong Baptist University',
+    detail: 'BSc (Hons) Computer Science (AI)',
   },
   {
     period: '2014–2020',
-    school: '可立中學',
+    school: 'Ho Lap College',
     detail: '',
   },
 ]
@@ -64,24 +66,24 @@ export const certificates = [
 ]
 
 export const aboutSummary =
-  '你好，我是 Chan Hoi On。新畢業生，熱衷人工智能工程。畢業於香港浸會大學 BSc (Hons) Computer Science（AI），現於 Huawei Hong Kong Research Center 擔任 IT Engineer，管理 GPU 節點與計算資源，並協作人工智能應用的基礎設施。'
+  "Hi, I'm Chan Hoi On. I'm a fresh graduate passionate about AI engineering. I graduated from Hong Kong Baptist University with a BSc (Hons) in Computer Science (AI), and I currently work as an IT Engineer at Huawei Hong Kong Research Center, managing GPU nodes and compute resources and supporting infrastructure for AI applications."
 
 export const linkedinSummary =
-  '我是 Chan Hoi On，新畢業生，熱衷人工智能工程。歡迎到 LinkedIn 查看完整檔案，或直接來信交流。'
+  "I'm Chan Hoi On, a fresh graduate passionate about AI engineering. You're welcome to view my full LinkedIn profile or email me."
 
 export const notesText = [
-  '歡迎來到我的桌面！',
-  '我是 Chan Hoi On。新畢業生，熱衷人工智能工程。',
-  '想認識我的話，打開「關於我」或「履歷」就好。有事可以用電郵或 LinkedIn 找我。',
+  'Welcome to my desktop!',
+  "I'm Chan Hoi On, a fresh graduate passionate about AI engineering.",
+  'Open About Me or Experience to learn more. You can also reach me by email or LinkedIn.',
 ]
 
 export const contactMessages = [
   {
     from: 'pluskit',
-    text: '嗨嗨～歡迎光臨 Chan Hoi On 的桌面！我是這裡的小助手 PlusKit。',
+    text: "Hi! Welcome to Chan Hoi On's desktop. I'm PlusKit, the little helper here.",
   },
   {
     from: 'pluskit',
-    text: '主人是新畢業生，熱衷人工智能工程。想聯絡的話，按下面的電郵或 LinkedIn 就可以囉。',
+    text: "The owner is a fresh graduate, passionate about AI engineering. To get in touch, use the email or LinkedIn buttons below.",
   },
 ]

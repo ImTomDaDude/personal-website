@@ -72,7 +72,7 @@ function openIcon(id) {
       </div>
       <div class="icon-recycle">
         <DesktopIcon
-          label="回收筒"
+          label="Recycle Bin"
           icon="recycle"
           :selected="ui.selectedIcon === 'recycle'"
           @select="openIcon('recycle')"

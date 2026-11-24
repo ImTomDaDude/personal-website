@@ -15,10 +15,10 @@ function poke() {
       style="background: transparent; border: none; box-shadow: none"
       @click="poke"
     >
-      <PixelIcon name="recycle" :size="64" />
+      <PixelIcon name="recycle" :size="72" />
     </button>
-    <p class="org">回收筒是空的。</p>
-    <p class="muted">什麼都沒有被丟棄。</p>
-    <p v-if="taps >= 3" class="tagline">還想找出什麼嗎？夢想都還在桌面上喔。</p>
+    <p class="org">The Recycle Bin is empty.</p>
+    <p class="muted">Nothing has been thrown away.</p>
+    <p v-if="taps >= 3" class="tagline">Still looking? The good stuff is still on the desktop.</p>
   </div>
 </template>

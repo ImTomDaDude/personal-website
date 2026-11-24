@@ -3,11 +3,11 @@ import { experience, education, certificates, profile } from '../../data/content
 </script>
 
 <template>
-  <h2 class="page-heading">履歷</h2>
+  <h2 class="page-heading">Experience</h2>
   <p class="tagline">{{ profile.tagline }}</p>
 
   <fieldset class="fieldset-card">
-    <legend>經歷</legend>
+    <legend>Experience</legend>
     <ol class="timeline">
       <li v-for="item in experience" :key="item.period + item.org">
         <span class="period">{{ item.period }}</span>
@@ -19,7 +19,7 @@ import { experience, education, certificates, profile } from '../../data/content
   </fieldset>
 
   <fieldset class="fieldset-card">
-    <legend>學歷</legend>
+    <legend>Education</legend>
     <ol class="timeline">
       <li v-for="item in education" :key="item.school">
         <span class="period">{{ item.period }}</span>
@@ -30,7 +30,7 @@ import { experience, education, certificates, profile } from '../../data/content
   </fieldset>
 
   <fieldset class="fieldset-card">
-    <legend>證書</legend>
+    <legend>Certificates</legend>
     <ul class="timeline">
       <li v-for="item in certificates" :key="item.name">
         <span class="period">{{ item.year }}</span>

@@ -10,12 +10,12 @@ import CalendarContent from './windows/CalendarContent.vue'
 import { profile } from '../data/content.js'
 
 const sections = [
-  { id: 'about', title: '關於我', icon: 'about' },
-  { id: 'resume', title: '履歷', icon: 'resume' },
-  { id: 'skills', title: '技能', icon: 'skills' },
-  { id: 'projects', title: '專題與作品', icon: 'projects' },
-  { id: 'notes', title: '小筆記', icon: 'notes' },
-  { id: 'linkedin', title: '聯絡', icon: 'linkedin' },
+  { id: 'about', title: 'About Me', icon: 'about' },
+  { id: 'resume', title: 'Experience', icon: 'resume' },
+  { id: 'skills', title: 'Skills', icon: 'skills' },
+  { id: 'projects', title: 'Projects', icon: 'projects' },
+  { id: 'notes', title: 'Notes', icon: 'notes' },
+  { id: 'linkedin', title: 'Contact', icon: 'linkedin' },
 ]
 </script>
 
@@ -37,7 +37,7 @@ const sections = [
       <div class="nso-titlebar">
         <span class="title-glyph" />
         <PixelIcon name="calendar" :size="16" class="title-icon" />
-        <div class="title-bar-text">日曆</div>
+        <div class="title-bar-text">Calendar</div>
       </div>
       <div class="nso-body"><CalendarContent /></div>
       <div class="nso-statusbar"><span class="status-dots"><i /><i /><i /></span></div>

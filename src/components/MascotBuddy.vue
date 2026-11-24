@@ -4,9 +4,9 @@ import PixelIcon from './PixelIcon.vue'
 
 const open = ref(true)
 const lines = [
-  '歡迎來到 Chan Hoi On 的桌面！我是原創小助手 PlusKit。',
-  '按左邊的圖示，或從「開始」打開視窗吧～',
-  '有事可以用電郵或 LinkedIn 找主人喔。',
+  'Welcome to Chan Hoi On\'s desktop! I\'m PlusKit, the original little helper here.',
+  'Click the icons on the left, or open a window from the Start menu.',
+  'You can reach the owner by email or LinkedIn.',
 ]
 const index = ref(0)
 

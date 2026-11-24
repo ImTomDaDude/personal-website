@@ -12,7 +12,7 @@ function openItem(id) {
 </script>
 
 <template>
-  <div class="start-menu" role="menu" aria-label="開始功能表">
+  <div class="start-menu" role="menu" aria-label="Start menu">
     <div class="start-stripe">CHAN HOI ON</div>
     <div class="start-items">
       <button
@@ -22,13 +22,13 @@ function openItem(id) {
         role="menuitem"
         @click="openItem(item.windowId)"
       >
-        <PixelIcon :name="item.icon" :size="24" />
+        <PixelIcon :name="item.icon" :size="32" />
         <span>{{ item.label }}</span>
       </button>
       <div class="sep" />
       <button type="button" class="shutdown" @click="toggleShutdown(true)">
-        <PixelIcon name="flower" :size="24" />
-        <span>關機…</span>
+        <PixelIcon name="flower" :size="32" />
+        <span>Shut Down…</span>
       </button>
     </div>
   </div>
