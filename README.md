@@ -35,12 +35,9 @@ npm run preview
 2. 選擇 **File > Open Folder…**（檔案 > 開啟資料夾）。
 3. 選取本專案資料夾後即可繼續本機開發。
 
-開發機上的路徑是 `/workspace/personal-website`。若已複製到你的 Windows 電腦，請改為實際放置的路徑，例如：
+這個專案目前在你的 Windows 電腦上的路徑是：
 
-- `C:\Users\<你的帳號>\Desktop\personal-website`
-- 或 `C:\Users\<你的帳號>\personal-website`
-
-（把 `<你的帳號>` 換成你的 Windows 使用者名稱。）
+`C:\Users\ie-admin\Desktop\personal-website`
 
 ## 專案簡述
 
